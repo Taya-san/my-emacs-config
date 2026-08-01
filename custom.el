@@ -4,7 +4,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(dtrt-indent-global-mode t)
  '(org-agenda-files
    '("/ssh:archlinux-2:/home/taya/org/notes.org"
      "/ssh:archlinux-2:/home/taya/org/todo.org"))

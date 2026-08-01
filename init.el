@@ -44,6 +44,11 @@
 
 ;;el condor pasa
 (setq elcord-client-id "1532396100076568696")
+(setq elcord-quiet t)
+(setq elcord-icon-base '"https://raw.githubusercontent.com/Taya-san/my-emacs-config/main/icons/")
+(setq elcord-editor-icon '"logo_emacs_1")
+(with-eval-after-load 'elcord
+  (setq elcord--editor-name "jujur gk tw mw isi apa jd bayangin aja isinya"))
 
 (elcord-mode 1)
 
@@ -127,7 +132,7 @@
 (setq completion-styles '(orderless))
 
 ;; DTRRT FOR INDENTATIOOOOOOOON
-(dtrt-indent-global-mode t)
+(setq dtrt-indent-global-mode t)
 
 ;; fontssssss
 (set-fontset-font t 'unicode (font-spec :family "JetBrainsMono Nerd Font") nil 'prepend)
