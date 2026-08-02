@@ -52,6 +52,8 @@
   (package-install 'org-modern))
 (unless (package-installed-p 'code-cells)
   (package-install 'code-cells))
+(unless (package-installed-p 'zoxide)
+  (package-install 'zoxide))
 
 (require 'evil)
 (require 'doom-modeline)
@@ -77,3 +79,4 @@
 (require 'evil-org-agenda)
 (require 'org-modern)
 (require 'code-cells)
+(require 'zoxide)

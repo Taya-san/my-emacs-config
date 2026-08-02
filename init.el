@@ -11,6 +11,7 @@
 (load "~/.config/emacs/packages")
 (require 'tramp)
 (require 'tty)
+(require 'zoxide)
 
 ;; im not evilllll
 (evil-mode 1)
@@ -25,6 +26,7 @@
 (global-set-key (kbd "C-x C-b") #'ibuffer)
 (global-set-key (kbd "C-x b") #'consult-buffer)
 (global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c z") #'zoxide-travel-with-query)
 
 (with-eval-after-load 'dirvish
   (evil-define-key 'normal dirvish-mode-map
@@ -127,6 +129,7 @@
 (with-eval-after-load 'org (global-org-modern-mode))
 (setq org-log-done 'time)
 (setq org-log-done 'note)
+(setq org-startup-folded 'content)
 
 ;; orderlesssss
 (setq completion-styles '(orderless))
